@@ -1,9 +1,3 @@
 export default function ForgotPassword() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="mt-4 text-lg text-gray-600">
-        This is the forgot password page of the application.
-      </p>
-    </main>
-  );
+  return <h1>Forgot Password</h1>;
 }

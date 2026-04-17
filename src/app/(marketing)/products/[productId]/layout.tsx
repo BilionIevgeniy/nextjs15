@@ -1,3 +1,5 @@
+import Link from "next/link.js";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <div style={{ border: "2px solid red", padding: "1rem" }}>
-      <h2>Product Layout</h2>
+      <Link href="/products">To Products</Link>
       {children}
     </div>
   );

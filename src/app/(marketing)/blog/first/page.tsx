@@ -1,9 +1,3 @@
 export default function First() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="mt-4 text-lg text-gray-600">
-        This is the first page of the application.
-      </p>
-    </main>
-  );
+  return <h1>First blog post</h1>;
 }
