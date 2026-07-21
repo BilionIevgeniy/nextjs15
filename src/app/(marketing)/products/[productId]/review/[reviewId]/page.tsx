@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export default async function Product({
   params,
@@ -7,8 +7,11 @@ export default async function Product({
 }) {
   const awaitedParams = await params;
   const { reviewId, productId } = awaitedParams;
-  if (parseInt(reviewId) > 5) {
-    notFound();
+  if (parseInt(reviewId) > 5 && parseInt(reviewId) <= 10) {
+    notFound(); // notFound() is a server action that throws a 404 error and search for closest not-found page
+  }
+  if (parseInt(reviewId) > 10) {
+    redirect("/"); // redirect() is a server action that redirects to the specified path
   }
   return (
     <h1>

@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link.js";
 import { usePathname } from "next/navigation.js";
 import "./styles.css";
@@ -24,7 +25,7 @@ export default function AuthRootLayout({
         }}
         className="header"
       >
-        <h1>AuthRootLayout</h1>
+        <h1>Auth Layout</h1>
         {navLinks.map((link) => {
           const isActive =
             pathName === link.href || pathName?.startsWith(link.href + "/");

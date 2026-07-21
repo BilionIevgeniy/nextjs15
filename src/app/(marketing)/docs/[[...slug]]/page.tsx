@@ -1,18 +1,19 @@
+// This is a dynamic route that can handle any number of segments docs/feature/concept
 export default async function Docs({
   params,
 }: {
   params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
-  if (slug && slug.length === 1) {
+  if (slug?.length === 1) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <p className="mt-4 text-lg text-gray-600">
-          This is the feature{slug[0]}
+          This is the feature {slug[0]}
         </p>
       </main>
     );
-  } else if (slug && slug.length === 2) {
+  } else if (slug?.length === 2) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <p className="mt-4 text-lg text-gray-600">

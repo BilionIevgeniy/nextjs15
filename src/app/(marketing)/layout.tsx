@@ -1,4 +1,5 @@
 import Link from "next/link.js";
+import "./styles.css";
 
 export const metadata = {
   title: "Next.js",
@@ -16,11 +17,11 @@ export default function MarketingRootLayout({
         style={{
           backgroundColor: "lightblue",
           padding: "1rem",
-          height: "80px",
+          height: "100px",
         }}
         className="header"
       >
-        <h1>MarketingRootLayout</h1>
+        <h1>Marketing Layout</h1>
         <Link href="/">Home</Link>
       </header>
       <main
