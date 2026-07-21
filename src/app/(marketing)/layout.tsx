@@ -1,5 +1,4 @@
 import Link from "next/link.js";
-import "./styles.css";
 
 export const metadata = {
   title: "Next.js",
