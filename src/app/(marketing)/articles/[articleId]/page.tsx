@@ -15,6 +15,9 @@ export default function ArticlePage({
   // use - to unwrap the promise
   const { articleId } = use(params);
   const { lang = "en" } = use(searchParams);
+  if (lang == "fr") {
+    throw new Error("French language not supported");
+  }
   return (
     <>
       <h1>Article: {articleId}</h1>

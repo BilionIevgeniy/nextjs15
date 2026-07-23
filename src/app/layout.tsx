@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { ErrorWrapper } from "./error-wrapper";
 import "../styles.css";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function MarketingRootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{<ErrorWrapper>{children}</ErrorWrapper>}</body>
     </html>
   );
 }
