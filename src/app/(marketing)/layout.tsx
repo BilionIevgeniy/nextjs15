@@ -25,9 +25,8 @@ export default function MarketingRootLayout({
       </header>
       <main
         style={{
-          height: "calc(100vh - 265px)", // Adjust height to fill the remaining space
+          minHeight: "calc(100vh - 180px)",
         }}
-        className="main"
       >
         {children}
       </main>
